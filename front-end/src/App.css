@@ -1,0 +1,18 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.Nav-bar{
+  width: 12%;
+  height: 100vh;
+  background-color: black;
+  position: fixed;
+}
+.main-content{
+  width: 88%;
+  margin-left: 12%;
+  background-color: rgb(12 11 11);
+  min-height: 100vh;
+}

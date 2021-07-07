@@ -1,0 +1,27 @@
+.Navigations{
+    height: 100vh;
+}
+.Navigation{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    text-align: center;
+}
+.logo{
+    width: 100%;
+    text-align: center;
+}
+.logo img{
+    width: 100%;
+}
+.active{
+    background: rgb(42, 23, 211);
+    /* width: 100%; */
+}
+.Navigation-component a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    width: 100%;
+    color: white;
+}

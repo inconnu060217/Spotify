@@ -1,0 +1,26 @@
+.acceuil-container{
+    width: 96%;
+    margin: 0 2%;
+    color: white;
+}
+.acceuil-albums{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    justify-content: center;
+    grid-gap: 20px;
+}
+.acceuil{
+    cursor: pointer;
+}
+.acceuil img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.title-album-acceuil{
+    color: white;
+    font-size: 20px;
+    font-family: cursive;
+}

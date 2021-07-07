@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.albums-container{
+    width: 96%;
+    margin: 0 2%;
+}
+.content-albums{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    justify-content: center;
+    grid-gap: 20px;
+}
+.content{
+    cursor: pointer;
+}
+.content img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.title{
+    color: white;
+    font-size: 20px;
+    font-family: cursive;
+}
+.paginations-albums{
+    margin-top: 2rem;
+}
