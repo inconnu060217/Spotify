@@ -27,10 +27,7 @@ function Artistes() {
     return (
         <>
         <div className='container-artists'>
-            <div className='search-artists'>
-                <Title title='Artistes'/>
-                <input type='search' placeholder='Search artistes' />
-            </div>
+            <Title title='Artistes'/>
         <div  className="artists-container">
             {
                 currentArtists.map((artist, index) => {

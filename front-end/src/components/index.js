@@ -7,6 +7,8 @@ export { default as Detail_album } from "./Detail_album";
 export { default as Detail_genre } from "./Detail_genre";
 export { default as Detail_artists } from "./Detail_artists";
 export { default as Title } from "./Titre";
+export { default as Search } from "./Search";
+
 
 
 

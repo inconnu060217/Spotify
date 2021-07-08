@@ -17,6 +17,11 @@ function Navigation() {
                         </NavLink>
                     </li>
                     <li className='Navigation-component'>
+                        <NavLink to='/search' exact>
+                            Recherche
+                        </NavLink>
+                    </li>
+                    <li className='Navigation-component'>
                         <NavLink to='/albums' exact>
                             Albums
                         </NavLink>

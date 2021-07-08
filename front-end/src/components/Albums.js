@@ -27,10 +27,7 @@ function Albums() {
     return (
         <>
             <div className="albums-container">
-                <div className='search-album'>
-                    <Title title='Albums'/>
-                    <input type='search' placeholder='Search album ....' />
-                </div>
+                <Title title='Albums'/>
                 <div className='content-albums'>
                     {
                         currentAlbums.map((item, index) => {

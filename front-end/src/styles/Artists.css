@@ -6,20 +6,12 @@
     width: 40%;
     justify-content: space-between;
     padding: 18px 0;
-    margin: 0 2rem;
-}
-.search-artists input {
-    height: 40px;
-    width: 70%;
-    outline: none;
-    font-size: 20px;
-    font-family: cursive;
 }
 .artists-container{
     color: white;
     margin: 0 2rem;
     display: grid;
-    justify-content: space-around;
+    justify-content: center;
     grid-gap: 24px;
     grid-template-columns: repeat(auto-fill, 233px);
 }

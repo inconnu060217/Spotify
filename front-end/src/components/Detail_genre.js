@@ -34,7 +34,6 @@ function Detail_genre() {
                 .then(res => setAlbumGenre(res))
             }
     }, [detailGenre, albumGenre])
-    console.log(albumGenre);
     const handleRedirection = (name) => {
         history.push('/detail_album/' + name)
     }

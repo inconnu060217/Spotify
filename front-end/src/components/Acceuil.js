@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
-import {Title} from '../components';
+import {Title} from '../components'
 import "../styles/Acceuil.css";
 
 function Acceuil() {
