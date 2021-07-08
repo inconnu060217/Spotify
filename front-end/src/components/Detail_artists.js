@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
+import {Title} from '../components';
 import { useLocation, useHistory } from 'react-router-dom';
 function Detail_artists() {
     const [detailArtists, setDetailArtists] = useState(null);
@@ -24,6 +25,7 @@ function Detail_artists() {
     if(!detailArtists || !albumArtists) return <div>Chargement...</div>
     return (
         <div className='Detail_artists_container'>
+            <Title title='Detail Artistes'/>
             {
                 detailArtists.map((detailArtist, index) => {
                     return <div key={index} className='content-detail-artists'>

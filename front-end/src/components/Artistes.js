@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import '../styles/Artists.css'
+import {Title} from '../components';
 import Paginations from './paginations';
 import { useHistory } from 'react-router-dom'
 
@@ -26,20 +27,26 @@ function Artistes() {
     return (
         <>
         <div className='container-artists'>
+            <div className='search-artists'>
+                <Title title='Artistes'/>
+                <input type='search' placeholder='Search artistes' />
+            </div>
         <div  className="artists-container">
             {
                 currentArtists.map((artist, index) => {
-                    return <div key={index} onClick={() => handleRedirection(artist.name)} className='artists-content'>
-                        <div className="artists">
-                            <div className='logo-artists'>
-                                <img src={artist.photo} alt='' />
-                            </div>
-                            <div >
-                                <p className='name-artists'>{artist.name}</p>
-                                <p className='artist'>Artiste</p>
+                    return (
+                        <div key={index} onClick={() => handleRedirection(artist.name)} className='artists-content'>
+                            <div className="artists">
+                                <div className='logo-artists'>
+                                    <img src={artist.photo} alt='' />
+                                </div>
+                                <div >
+                                    <p className='name-artists'>{artist.name}</p>
+                                    <p className='artist'>Artiste</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    )
                 })
             }
             </div>

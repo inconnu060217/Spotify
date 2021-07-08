@@ -12,8 +12,21 @@
     height: auto;
     display: grid;
     grid-template-columns: repeat(auto-fill, 200px);
-    justify-content: center;
+    justify-content: space-around;
     grid-gap: 20px;
+}
+.search-album{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    padding: 18px 0;
+}
+.search-album input {
+    height: 40px;
+    width: 70%;
+    outline: none;
+    font-size: 20px;
+    font-family: cursive;
 }
 .content{
     cursor: pointer;

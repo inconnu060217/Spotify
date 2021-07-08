@@ -1,11 +1,25 @@
 .container-artists{
     height: auto;
 }
+.search-artists{
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    padding: 18px 0;
+    margin: 0 2rem;
+}
+.search-artists input {
+    height: 40px;
+    width: 70%;
+    outline: none;
+    font-size: 20px;
+    font-family: cursive;
+}
 .artists-container{
     color: white;
     margin: 0 2rem;
     display: grid;
-    justify-content: center;
+    justify-content: space-around;
     grid-gap: 24px;
     grid-template-columns: repeat(auto-fill, 233px);
 }

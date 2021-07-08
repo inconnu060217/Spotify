@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Paginations from './paginations';
+import {Title} from '../components';
 import '../styles/Albums.css'
 import {useHistory} from 'react-router-dom';
 
@@ -26,6 +27,10 @@ function Albums() {
     return (
         <>
             <div className="albums-container">
+                <div className='search-album'>
+                    <Title title='Albums'/>
+                    <input type='search' placeholder='Search album ....' />
+                </div>
                 <div className='content-albums'>
                     {
                         currentAlbums.map((item, index) => {

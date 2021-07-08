@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
+import {Title} from '../components';
 import "../styles/Acceuil.css";
 
 function Acceuil() {
@@ -21,6 +22,11 @@ function Acceuil() {
     return (
     <div>
         <div className="acceuil-container">
+                <div className='component-title'>
+                    <Title 
+                    title='Acceuil'
+                    />
+                </div>
             <div className="acceuil-albums">
                 {albums.splice(Math.floor(Math.random() * albums.length),30).map((item, index) => {
                     return (

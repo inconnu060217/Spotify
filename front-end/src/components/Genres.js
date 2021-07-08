@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import {Title} from '../components';
 import { useHistory } from 'react-router-dom';
 import '../styles/Genre.css';
 
@@ -29,25 +30,30 @@ function Genres() {
     ]
     if(!genres) return <div>Chargement...</div>
     return (
-        <div className='genre-container'>
-            {
-                genres.map((genre, index) => {
-                    return (
-                        <div key={index} 
-                            onClick={() => handleRedirection(genre.name)}
-                            className='genre-content'
-                            style={{
-                                background: colorsArray[Math.floor(Math.random() * 50)]
-                            }}
-                        >
-                            <div className='genre-name'>
-                                <h1>{genre.name}</h1>
+        <>
+            <div>
+                <Title title='Genres'/>
+            </div>
+            <div className='genre-container'>
+                {
+                    genres.map((genre, index) => {
+                        return (
+                            <div key={index} 
+                                onClick={() => handleRedirection(genre.name)}
+                                className='genre-content'
+                                style={{
+                                    background: colorsArray[Math.floor(Math.random() * 50)]
+                                }}
+                            >
+                                <div className='genre-name'>
+                                    <h1>{genre.name}</h1>
+                                </div>
                             </div>
-                        </div>
-                    )
-                })
-            }
-        </div>
+                        )
+                    })
+                }
+            </div>
+        </>
     )
 }
 

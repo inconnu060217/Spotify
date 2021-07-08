@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { FaCaretRight, FaRegHeart } from 'react-icons/fa';
+import {Title} from '../components';
 import '../styles/Detail_artists.css'
 // import { AiTwotoneHeart } from 'react-icons/ai'
 import '../styles/Detail_album.css';
@@ -26,6 +27,7 @@ function Detail_album() {
     if(!detailAlbum || !tracks) return <div>Chargement...</div>
     return (
         <div className='detail-container'>
+            <Title title='Detail Albums'/>
             {
                 detailAlbum.map((item, index) => {                   
                     return <div key={index} className='content-detail-album'>
