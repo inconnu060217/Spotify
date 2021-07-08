@@ -48,13 +48,8 @@ function Detail_album() {
             }
             <div className='content-tracks-albums'>
                 <div className='infos-tracks-albums'>
-                    <div className='play-icone'>
-                        <button className='icon-play'><FaCaretRight size={45} /></button>
-                        <button className='icon-heart'><FaRegHeart size={45} /></button>
-                        <button className='icon-point'>...</button>
-                    </div>
                     <div className='title-tracks'>
-                        <p>#</p>
+                        <p className='title-tracks-s'>#</p>
                         <p>TITRE</p>
                     </div>
                     <div className='div-bar'/>

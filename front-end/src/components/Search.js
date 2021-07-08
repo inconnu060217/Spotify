@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-// import '../styles/Search.css';
+import '../styles/Search.css';
 // import '../styles/Artists.css';
 import { useHistory } from 'react-router-dom';
 import {Title} from '../components'
@@ -36,7 +36,7 @@ function Search() {
             <div className='search-content'>
                 <input 
                 type='search' 
-                placeholder='Artistes ou Albums' 
+                placeholder='Recherche artistes ou albums......' 
                 onChange={(e) => setSearch(e.target.value)} />
 
                 <select name="search" 
@@ -45,11 +45,17 @@ function Search() {
                             setSelectOptionValue(e.target.value);
                         }
                     }>
-                    <option value="catégorie">Catégorie</option>    
+                    <option value="">Catégorie</option>    
                     <option value="artists">Artists</option>
                     <option value="albums">Albums</option>
                 </select>
             </div>
+            {
+                selectOptionValue == '' ? 
+                <div>
+                    <p>Veuillez selectionnez la Catégorie de votre recherche !</p>
+                </div>
+            : null }
             {
                 selectOptionValue == 'artists' ?
                     <div className='container-artists'>

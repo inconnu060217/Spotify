@@ -1,15 +1,14 @@
 .Detail_artists_container{
     color: white;
+    margin: 0 2rem;
 }
 
 .infos-artists{
-    background-image: linear-gradient(to bottom, #464545, #3d3c3c, #353434, #2d2c2c, #252424);
     height: 320px;
 }
 .detail-artists{
     display: flex;
     width: 80%;
-    margin-left: 2rem;
 }
 .img-artist{
     width: 250px;
@@ -34,7 +33,7 @@
     font-weight: 900;
 }
 .all-albums-artists{
-    margin: 2rem 2rem;
+    margin: 2rem 0;
     color: #fff;
     font-size: 24px;
     font-weight: 700;
@@ -42,7 +41,6 @@
     line-height: 28px;
 }
 .artists-album-content{
-    margin: 0 2rem;
     display: grid;
     grid-gap: 24px;
     grid-template-columns: repeat(auto-fill, 233px);

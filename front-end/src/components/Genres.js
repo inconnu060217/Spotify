@@ -31,7 +31,7 @@ function Genres() {
     if(!genres) return <div>Chargement...</div>
     return (
         <>
-            <div>
+            <div className='title-genre'>
                 <Title title='Genres'/>
             </div>
             <div className='genre-container'>

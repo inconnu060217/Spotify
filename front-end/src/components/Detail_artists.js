@@ -25,7 +25,7 @@ function Detail_artists() {
     if(!detailArtists || !albumArtists) return <div>Chargement...</div>
     return (
         <div className='Detail_artists_container'>
-            <Title title='Detail Artistes'/>
+            <Title title="Detail de l'Artiste"/>
             {
                 detailArtists.map((detailArtist, index) => {
                     return <div key={index} className='content-detail-artists'>

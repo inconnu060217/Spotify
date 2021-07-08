@@ -1,14 +1,14 @@
 .detail-genre-container{
     color: white;
+    margin: 0 2rem;
 }
 .infos-genre{
-    background-image: linear-gradient(to bottom, #464545, #3d3c3c, #353434, #2d2c2c, #252424);
+    /* background-image: linear-gradient(to bottom, #464545, #3d3c3c, #353434, #2d2c2c, #252424); */
     height: 320px;
 }
 .detail-detail{
     display: flex;
     width: 80%;
-    margin-left: 2rem;
 }
 .img-genre{
     width: 250px;
@@ -37,7 +37,7 @@
     
 } */
 .all-albums-genre{
-    margin: 2rem 2rem;
+    margin: 2rem 0;
     color: #fff;
     font-size: 24px;
     font-weight: 700;
@@ -45,7 +45,6 @@
     line-height: 28px;
 }
 .genre-album-content{
-    margin: 0 2rem;
     display: grid;
     grid-gap: 24px;
     grid-template-columns: repeat(auto-fill, 233px);

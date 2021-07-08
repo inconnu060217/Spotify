@@ -28,26 +28,26 @@ function Artistes() {
         <>
         <div className='container-artists'>
             <Title title='Artistes'/>
-        <div  className="artists-container">
-            {
-                currentArtists.map((artist, index) => {
-                    return (
-                        <div key={index} onClick={() => handleRedirection(artist.name)} className='artists-content'>
-                            <div className="artists">
-                                <div className='logo-artists'>
-                                    <img src={artist.photo} alt='' />
-                                </div>
-                                <div >
-                                    <p className='name-artists'>{artist.name}</p>
-                                    <p className='artist'>Artiste</p>
+            <div  className="artists-container">
+                {
+                    currentArtists.map((artist, index) => {
+                        return (
+                            <div key={index} onClick={() => handleRedirection(artist.name)} className='artists-content'>
+                                <div className="artists">
+                                    <div className='logo-artists'>
+                                        <img src={artist.photo} alt='' />
+                                    </div>
+                                    <div >
+                                        <p className='name-artists'>{artist.name}</p>
+                                        <p className='artist'>Artiste</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    )
-                })
-            }
+                        )
+                    })
+                }
+                </div>
             </div>
-        </div>
         <div className='paginations-artists'>
                 <Paginations 
                 elementPerPage={artistsPerPage} 

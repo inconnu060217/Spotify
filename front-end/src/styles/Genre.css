@@ -1,6 +1,6 @@
 .genre-container{
     color: white;
-    margin: 0 5rem;
+    margin: 0 2rem;
     display: grid;
     grid-gap: 45px;
     grid-template-columns: repeat(auto-fill, 215px);
@@ -11,4 +11,10 @@
     height: 240px;
     cursor: pointer;
     border-radius: 10%;
+}
+.title-genre{
+    margin: 0 2rem;
+}
+.genre-name{
+    text-align: center;
 }

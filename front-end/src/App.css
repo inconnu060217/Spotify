@@ -13,6 +13,6 @@
 .main-content{
   width: 88%;
   margin-left: 12%;
-  background-color: rgb(56 53 53);
+  background: gray;
   min-height: 100vh;
 }

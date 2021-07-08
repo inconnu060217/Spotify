@@ -1,6 +1,22 @@
 .search-container{
     margin: 0 2rem;
+    color: white;
+    font-family: cursive;
+    /* display: flex; */
 }
 .search-content{
     display: flex;
+    width: 100%;
+    padding: 20px 0;
+}
+.search-content input{
+    width: 30%;
+    height: 50px;
+    font-size: 20px;
+    padding: 0 0 0 7px;
+    outline: none;
+}
+
+.search-content select {
+    outline: none;
 }
