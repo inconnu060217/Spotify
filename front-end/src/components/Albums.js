@@ -31,12 +31,14 @@ function Albums() {
                 <div className='content-albums'>
                     {
                         currentAlbums.map((item, index) => {
-                            return <div key={index} onClick={() => handleId(item.name)} className="content">
+                            return (
+                            <div key={index} onClick={() => handleId(item.name)} className="content">
                                 <img 
                                     src={item.cover}
                                     />
                                     <p className='title'>{item.name}</p>
                             </div>
+                            )
                         })
                     }
                 </div>

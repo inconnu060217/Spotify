@@ -1,8 +1,6 @@
 .search-container{
     margin: 0 2rem;
     color: white;
-    font-family: cursive;
-    /* display: flex; */
 }
 .search-content{
     display: flex;

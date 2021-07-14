@@ -1,11 +1,34 @@
-.title-title-content{
-    text-align: left;
-    font-size: 47px;
-    padding: 20px 0;
+.title-content{
+    text-transform: uppercase;
+    color: white;
+    font-size: 3rem;
+    position: relative;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
 }
-.title-name{
+.title-content::before{
+    content: '';
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    background-color: rgb(148, 143, 143);
+    width: 6rem;
+    height: .4rem;
+    border-radius: 50px;
+}
+.title-content::after{
+    content: '';
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    background-color: white;
+    width: 3rem;
+    height: .4rem;
+    border-radius: 50px;
+}
+/* .title-name{
     font-size: 30px;
     letter-spacing: -.04em;
     font-family: cursive;
     color: white;
-}
+} */
